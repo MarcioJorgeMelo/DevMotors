@@ -1,10 +1,11 @@
+import { Submenu } from "./components/home/submenu";
 
 
 
 export default function Home() {
   return (
     <main>
-      <h1>Teste</h1>
+      <Submenu />
     </main>
   );
 }
