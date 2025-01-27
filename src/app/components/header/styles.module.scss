@@ -34,12 +34,12 @@
 
 .contentLogo {
     display: none;
-}
-
-.contentLogo {
     font-weight: bold;
-    color: #121212;
     font-size: 30px;
+
+    a {
+        color: #121212;
+    }
 }
 
 .nav {
