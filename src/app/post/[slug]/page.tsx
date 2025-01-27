@@ -45,10 +45,12 @@ export default async function Page({ params: { slug } }: {
                     <div className={styles.bannerAbout}>
                         <Image 
                            className={styles.imageAbout}
-                           fill={true} 
+                           fill={true}
                            alt={objects[0].title}
                            quality={100}
+                           priority={true}
                            src={objects[0].metadata.description.banner.url}
+                           sizes='(max-width: 480px) 100vw, (max-width: 1024px) 75vw, 50vw'
                         />
                     </div>
 

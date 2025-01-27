@@ -35,6 +35,7 @@ export function Hero({ heading, buttonUrl, buttonTitle, bannerUrl, icon }: HeroP
                     quality={100}
                     fill={true}
                     className={styles.banner}
+                    sizes='(max-width: 480px) 100vw, (max-width: 1024px) 75vw, 50vw'
                 />
             </div>
         </main>
