@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export async function getDataHome() {
     try {
 
@@ -52,11 +54,13 @@ export async function getItemBySlug(itemSlug: string) {
 
         if(!response.ok) {
             throw new Error("Failed to fetch item data.");
+            redirect("/");
         }
 
         return response.json();
         
     } catch (error) {
         throw new Error("Failed to fetch item data.");
+        redirect("/");
     }
 }
