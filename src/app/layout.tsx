@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    (process.env.NEXT_PUBLIC_SITE_URL as string) || "https://devmotors.com.br"
+    (process.env.NEXT_PUBLIC_SITE_URL as string) ?? "https://devmotors.com.br"
   ),
   title: "DevMotors - Sua oficina especializada",
   description: "Oficina de carros especializada brasileira",
