@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL as string),
   title: "DevMotors - Sua oficina especializada",
   description: "Oficina de carros especializada brasileira",
   keywords: ["oficina", "oficina carros", "carros", "manuntenção de carros"],
@@ -28,9 +29,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: true
-    }
-  }
+      noimageindex: true,
+    },
+  },
 };
 
 export default function RootLayout({
