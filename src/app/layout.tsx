@@ -14,13 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL as string),
+  metadataBase: new URL(
+    (process.env.NEXT_PUBLIC_SITE_URL as string) || "https://devmotors.com.br"
+  ),
   title: "DevMotors - Sua oficina especializada",
   description: "Oficina de carros especializada brasileira",
   keywords: ["oficina", "oficina carros", "carros", "manuntenção de carros"],
   openGraph: {
     title: "DevMotors - Sua oficina especializada",
-    images: [`${process.env.NEXT_PUBLIC_URL}/logo.jpg`],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/logo.jpg`],
   },
   robots: {
     index: true,
